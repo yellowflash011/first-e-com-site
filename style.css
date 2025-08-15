@@ -759,7 +759,7 @@ footer .copyright {
     gap: 20px;
   }
   #product1 .pro {
-    min-width: 40vw;
+    min-width: 80vw;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
     border-radius: 5px;
@@ -770,8 +770,8 @@ footer .copyright {
     position: relative;
   }
   #product1 .pro img {
-    width: 100%;
-    height: 150px;
+    width: 75vw;
+    height: 30vh;
     border-radius: 5px;
   }
 
