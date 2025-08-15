@@ -1,0 +1,108 @@
+// init controller
+var controller = new ScrollMagic.Controller();
+
+// build scene
+var scene = new ScrollMagic.Scene({
+        triggerElement: "#trigger",
+        duration: "80%"
+    })
+    .addTo(controller)
+    // .addIndicators()
+    .on("enter", function (e) {
+        $('.vga_booom_word').css({
+            "opacity": "1",
+            "transition": "2s"
+        });
+        $('.vga_booom_01').css({
+            "left": "0",
+            "transition": "2s"
+        });
+        $('.vga_booom_02').css({
+            "left": "0",
+            "transition": "2s"
+        });
+        $('.vga_booom_03').css({
+            "left": "0",
+            "transition": "2s"
+        });
+        $('.vga_booom_04').css({
+            "left": "0",
+            "transition": "2s"
+        });
+        $('.vga_booom_05').css({
+            "left": "0",
+            "transition": "2s"
+        });
+        $('.vga_booom_06').css({
+            "left": "0",
+            "transition": "2s"
+        });
+    })
+    .on("leave", function (e) {
+        $('.vga_booom_word').css({
+            "opacity": "0",
+            "transition": "2s"
+        });
+        $('.vga_booom_01').css({
+            "left": "5%",
+            "transition": "1.5s"
+        });
+        $('.vga_booom_02').css({
+            "left": "-29%",
+            "transition": "1.5s"
+        });
+        $('.vga_booom_03').css({
+            "left": "-18%",
+            "transition": "1.5s"
+        });
+        $('.vga_booom_04').css({
+            "left": "-5%",
+            "transition": "1.5s"
+        });
+        $('.vga_booom_05').css({
+            "left": "5%",
+            "transition": "1.5s"
+        });
+        $('.vga_booom_06').css({
+            "left": "15%",
+            "transition": "1.5s"
+        });
+    });
+
+
+var scene = new ScrollMagic.Scene({
+        triggerElement: "#test_201801",
+        duration: "80%"
+    })
+    .addTo(controller)
+    // .addIndicators()
+    .on("enter", function (e) {
+        $('.vga_booom_word').css({
+            "opacity": "0",
+            "transition": "2s"
+        });
+        $('.vga_booom_01').css({
+            "left": "5%",
+            "transition": "1.5s"
+        });
+        $('.vga_booom_02').css({
+            "left": "-29%",
+            "transition": "1.5s"
+        });
+        $('.vga_booom_03').css({
+            "left": "-18%",
+            "transition": "1.5s"
+        });
+        $('.vga_booom_04').css({
+            "left": "-5%",
+            "transition": "1.5s"
+        });
+        $('.vga_booom_05').css({
+            "left": "5%",
+            "transition": "1.5s"
+        });
+        $('.vga_booom_06').css({
+            "left": "15%",
+            "transition": "1.5s"
+        });
+    })

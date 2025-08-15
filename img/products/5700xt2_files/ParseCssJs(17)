@@ -1,0 +1,325 @@
+$(document).ready(function () {
+    // aorus slider
+    var movementStrength = 20;
+    var height = movementStrength / $(window.parent).height();
+    var width = movementStrength / $(window.parent).width();
+    $("#top-image_aorus").mousemove(function (e) {
+        var pageX = e.clientX;
+        var pageY = e.clientY;
+        var newvalueX = width * pageX;
+        var newvalueX_01 = +newvalueX;
+        var newvalueY = height * pageY;
+        var newvalueY_01 = +10;
+        $('#top-image_aorus').css("background-position", newvalueX_01 + "%     " + newvalueY_01 + "%");
+    });
+    var $window = $(window.parent);
+
+    function check_vr_aorus() {
+        var bg_width = $(window.parent).width();
+        var bg_width_real = bg_width * 1.06;
+        $('#top-image_aorus').css("background-size", bg_width_real + "px     ");
+    };
+    $window.on('scroll resize', check_vr_aorus);
+    $window.trigger('scroll');
+    // gallery
+    var photo_item = $('.mouse-gallery .mouse-gallery-item .gallery-jpg'),
+        mouse_photo = $('.gallery-big-jpg'),
+        degree = $('.degree-watch'),
+        degree_s = $('.gallery-degree');
+    degree.css('opacity', '0');
+    $('#H5_scroll').addClass('cursor-_auto');
+    photo_item.click(function () {
+        degree.css('opacity', '0');
+        mouse_photo.show();
+        var self = $(this),
+            index = self.index();
+        degree_s.removeClass('photo-active');
+        photo_item.removeClass('photo-active');
+        photo_item.eq(index).addClass('photo-active');
+        var src_img = "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/photo" + "/0" + (index + 1) + ".jpg";
+        $('#H5_scroll').addClass('cursor-_auto');
+        mouse_photo.attr('src', src_img);
+    });
+    degree_s.click(function () {
+        photo_item.removeClass('photo-active');
+        degree_s.addClass('photo-active');
+        mouse_photo.hide();
+        $('#H5_scroll').removeClass('cursor-_auto');
+        degree.css('opacity', '1');
+    });
+    // change color
+    $(".colorwell").hide();
+    $(".rainbow_es").hide();
+    $(".color-piceker").hide();
+    $(".change_color_keep").hide();
+    $(".p2").hide();
+    $(".p3").hide();
+    $(".p4").hide();
+    $(".p1").hide();
+    // $(".p7").hide();
+    // $(".p0").hide();
+    $(".pes").hide();
+    $(".fade_in_speed").hide();
+    $(".btn1").click(function () {
+        $(".color-piceker").show();
+        $(".fuck").hide();
+        $(".rainbow_es").hide();
+        $(".colorwell").show();
+        $(".colorwell").removeClass('shite1');
+        $(".colorwell").removeClass('shite2');
+        $(".colorwell").removeClass('shite3');
+        $(".colorwell").removeClass('shite4');
+        $(".colorwell").addClass('shite');
+        $(".p2").hide();
+        $(".p3").hide();
+        $(".p4").hide();
+        $(".p0").hide();
+        $(".pes").hide();
+        $(".p1").show();
+        $(".p7").hide();
+        $(".fade_in_speed").show();
+        $('.change_color_product').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/08.png");
+        $('.rainbow_bg').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/bg.png");
+        $(".change_color_keep").show();
+    });
+    $(".btn2").click(function () {
+        $(".color-piceker").show();
+        $(".fuck").hide();
+        $(".rainbow_es").hide();
+        $(".colorwell").show();
+        $(".colorwell").removeClass('shite');
+        $(".colorwell").removeClass('shite1');
+        $(".colorwell").removeClass('shite2');
+        $(".colorwell").removeClass('shite3');
+        $(".colorwell").removeClass('shite4');
+        $(".p1").hide();
+        $(".p3").hide();
+        $(".p4").hide();
+        $(".p0").hide();
+        $(".pes").hide();
+        $(".p7").hide();
+        $(".p2").show();
+        $(".fade_in_speed").hide();
+        $('.change_color_product').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/08.png");
+        $('.rainbow_bg').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/bg.png");
+        $(".change_color_keep").show();
+    });
+    $(".btn5").click(function () {
+        $(".color-piceker").show();
+        $(".fuck").hide();
+        $(".rainbow_es").hide();
+        $(".colorwell").show();
+        $(".colorwell").removeClass('shite');
+        $(".colorwell").removeClass('shite1');
+        $(".colorwell").removeClass('shite3');
+        $(".colorwell").removeClass('shite4');
+        $(".colorwell").addClass('shite2');
+        $(".p0").hide();
+        $(".p1").hide();
+        $(".p2").hide();
+        $(".p4").hide();
+        $(".pes").hide();
+        $(".p3").show();
+        $(".p7").hide();
+        $(".fade_in_speed").hide();
+        $('.change_color_product').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/08.png");
+        $('.rainbow_bg').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/bg.png");
+        $(".change_color_keep").show();
+    });
+    $(".btn6").click(function () {
+        $(".color-piceker").show();
+        $(".fuck").hide();
+        $(".rainbow_es").hide();
+        $(".colorwell").show();
+        $(".colorwell").removeClass('shite');
+        $(".colorwell").removeClass('shite1');
+        $(".colorwell").removeClass('shite2');
+        $(".colorwell").removeClass('shite4');
+        $(".colorwell").addClass('shite3');
+        $(".p0").hide();
+        $(".p1").hide();
+        $(".p2").hide();
+        $(".p3").hide();
+        $(".pes").hide();
+        $(".p4").show();
+        $(".p7").hide();
+        $(".fade_in_speed").hide();
+        $('.change_color_product').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/08.png");
+        $('.rainbow_bg').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/bg.png");
+        $(".change_color_keep").show();
+    });
+    $(".btn7").click(function () {
+        $(".color-piceker").hide();
+        $(".fuck").hide();
+        $(".rainbow_es").hide();
+        $(".colorwell").show();
+        $(".colorwell").removeClass('shite');
+        $(".colorwell").removeClass('shite1');
+        $(".colorwell").removeClass('shite2');
+        $(".colorwell").removeClass('shite3');
+        $(".colorwell").addClass('shite4');
+        $(".p0").hide();
+        $(".p1").hide();
+        $(".p2").hide();
+        $(".p3").hide();
+        $(".pes").hide();
+        $(".p4").hide();
+        $(".p7").show();
+        $(".fade_in_speed").hide();
+        $('.change_color_product').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/08.png");
+        $('.rainbow_bg').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/bg.png");
+        $(".change_color_keep").show();
+    });
+    // rainbow change COLOR
+    $(".btn0").click(function () {
+        $(".color-piceker").hide();
+        $(".colorwell").hide();
+        $(".rainbow_es").hide();
+        $(".fuck").show();
+        $(".p1").hide();
+        $(".p2").hide();
+        $(".p3").hide();
+        $(".pes").hide();
+        $(".p4").hide();
+        $(".p0").show();
+        $(".p7").hide();
+        $(".fade_in_speed").hide();
+        $('.change_color_product').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/08_color.png");
+        $('.rainbow_bg').attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/product/bg_double.png");
+        $(".change_color_keep").hide();
+    });
+    $(".btn3").click(function () {
+        $(".fuck").hide();
+        $(".rainbow_es").hide();
+        $(".colorwell").show();
+        $(".colorwell").removeClass('shite');
+        $(".colorwell").removeClass('shite2');
+        $(".colorwell").removeClass('shite3');
+        $(".colorwell").addClass('shite1');
+        $(".btn4").removeClass('active');
+        $(".btn3").addClass('active');
+    });
+    $(".btn4").click(function () {
+        $(".fuck").hide();
+        $(".rainbow_es").hide();
+        $(".colorwell").show();
+        $(".colorwell").removeClass('shite1');
+        $(".colorwell").removeClass('shite2');
+        $(".colorwell").removeClass('shite3');
+        $(".colorwell").addClass('shite');
+        $(".btn3").removeClass('active');
+        $(".btn4").addClass('active');
+    });
+    $(".btn0").click(function () {
+        $("#effect_cycling").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0006_1.png");
+        $("#effect_content").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0003.png");
+        $("#effect_flash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0004.png");
+        $("#effect_dualflash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0005.png");
+        $("#effect_breating").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0001.png");
+        $("#effect_rotate").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0002.png");
+    });
+    $(".btn2").click(function () {
+        $("#effect_cycling").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0006.png");
+        $("#effect_content").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0003_1.png");
+        $("#effect_flash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0004.png");
+        $("#effect_dualflash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0005.png");
+        $("#effect_breating").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0001.png");
+        $("#effect_rotate").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0002.png");
+    });
+    $(".btn5").click(function () {
+        $("#effect_cycling").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0006.png");
+        $("#effect_content").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0003.png");
+        $("#effect_flash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0004_1.png");
+        $("#effect_dualflash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0005.png");
+        $("#effect_breating").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0001.png");
+        $("#effect_rotate").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0002.png");
+    });
+    $(".btn6").click(function () {
+        $("#effect_cycling").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0006.png");
+        $("#effect_content").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0003.png");
+        $("#effect_flash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0004.png");
+        $("#effect_dualflash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0005_1.png");
+        $("#effect_breating").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0001.png");
+        $("#effect_rotate").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0002.png");
+    });
+    $(".btn1").click(function () {
+        $("#effect_cycling").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0006.png");
+        $("#effect_content").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0003.png");
+        $("#effect_flash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0004.png");
+        $("#effect_dualflash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0005.png");
+        $("#effect_breating").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0001_1.png");
+        $("#effect_rotate").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0002.png");
+    });
+    $(".btn7").click(function () {
+        $("#effect_cycling").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0006.png");
+        $("#effect_content").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0003.png");
+        $("#effect_flash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0004.png");
+        $("#effect_dualflash").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0005.png");
+        $("#effect_breating").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0001.png");
+        $("#effect_rotate").attr("src", "/FileUpload/Global/KeyFeature/1246/innergigabyteimages/pic/0002_1.png");
+    });
+});
+$(document).ready(function () {
+    // safari 
+    var fit_hand = $('fit-hand-item div div');
+    var userAgent = navigator.userAgent;
+    var isIE = function (ver) {
+        var b = document.createElement('b')
+        b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->'
+        return b.getElementsByTagName('i').length === 1
+    }
+    var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+    var isFirefox = navigator.userAgent.search("Firefox ") > -1; //Firefox火狐瀏覽器
+    var isChrome = userAgent.indexOf("Chrome") > -1;
+    // var isIE = userAgent.indexOf("compatible ") > -1 && userAgent.indexOf("MSIE ") > -1 && !isOpera;
+    var isIE = userAgent.indexOf("MSIE ") > -1;
+    var isIE11 = !!navigator.userAgent.match(/Trident\/7\./);
+    if (isSafari && $(window).width() > 768) {
+        $('.col-lg-6').css('width', '49%');
+    } else if (isSafari && $(window).width() < 768) {
+        $('.col-xs-12').css('width', '100%');
+        fit_hand.addClass('iosmodel');
+    }
+    if (isIE && $(window).width() > 768) {
+        $('.col-lg-6').css('width', '49%');
+    } else if (isIE && $(window).width() < 768) {
+        $('.col-xs-12').css('width', '100%');
+    }
+    $(window).resize(function () {
+        if (isSafari && $(window).width() > 768) {
+            $('.col-lg-6').css('width', '49%');
+        } else if (isSafari && $(window).width() < 768) {
+            $('.col-xs-12').css('width', '100%');
+        }
+        if (isIE && $(window).width() > 768) {
+            $('.col-lg-6').css('width', '49%');
+        } else if (isIE && $(window).width() < 768) {
+            $('.col-xs-12').css('width', '100%');
+        }
+    });
+    if (isFirefox) {
+        $('.H5_360').hide();
+    };
+    if (isIE) {
+        $('.H5_360').hide(); // 360度旋轉
+    } else {
+        $(".ga_ie ").hide();
+    }
+    if (isIE11) {
+        $('.H5_360').hide(); // 360度旋轉
+    } else {
+        $(".ga_ie ").hide();
+    }
+    if (isSafari) {
+        $('.H5_360').hide();
+    }
+    if (isChrome) {
+        $(".H5").hide();
+    } else {
+        $("#H5_scroll ").hide();
+        $(".H5_360 ").removeClass('another');
+    }
+    $('#publishCheckAll').css('display', 'block');
+    $('#gigabytekeyfeatureCheckListItems > ul > li.finalApprovalItem').siblings().css('display', 'none');
+});

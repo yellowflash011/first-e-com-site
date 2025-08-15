@@ -1,0 +1,115 @@
+body {
+    background-color: #000;
+}
+
+#side_bar {
+    position: fixed;
+    bottom: 30%;
+    right: 2%;
+    transition: all ease 400ms;
+    transform: translateY(0);
+    z-index: 9999;
+    display: block;
+}
+
+#side_bar .liststyle {
+    height: 30px;
+    cursor: pointer;
+}
+
+#side_bar .listtext {
+    font-size: 13px;
+    font-family: 'Titillium Web', sans-serif, '微軟正黑體', Microsoft JhengHei;
+    float: left;
+    display: none;
+    /*margin-top:2%;*/
+}
+
+#side_bar .listicon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    margin: 0px 0px 30px 10px;
+    /* border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px; */
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+#side_bar .listicon:hover {
+    background: #ff6400;
+    height: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    #side_bar {
+        display: none;
+    }
+}
+
+
+/* bar test*/
+
+#rgbappbar {
+    cursor: pointer;
+}
+
+#rgbappdisbar {
+    cursor: pointer;
+    display: none;
+}
+
+
+/*
+  #choosebar .listtext:hover{
+      color:#ff7200;     
+  }
+
+
+
+nav-point*********************************
+
+.list01{
+  right:10px;
+  position:fixed;
+  list-style:none;
+  padding:10px;
+}
+.list01 li{
+    color:#FFFFFF;
+    text-decoration:none;
+    cursor:pointer;
+    border-radius: 7px;
+    margin: 20px 0;
+}
+.list01 ul li{
+    display: block;
+    width: 16px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    height: 16px;
+    padding: 0;
+    background: #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+.list01 ul li:hover{
+    background: #ff6400;
+    height: 20px;
+}
+
+*/

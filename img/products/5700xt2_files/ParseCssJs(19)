@@ -1,0 +1,202 @@
+var href = window.parent.document.location.href;
+var pdoc, side_bar, top;
+var path = window.location.pathname.substr(0, window.location.pathname.lastIndexOf('/') + 1);
+top = window.top;
+pdoc = top.document;
+var pmodelclass = $('#model-item li', parent.document).attr('class');
+var pmodelid = $('#model-item li', parent.document);
+var nowwindowwidth = $(window).width();
+
+$(window).on('resize', function() {
+    if ((pmodelclass == 'kf active') && (nowwindowwidth >= 960)) {
+        function init() {
+            var stylelink = $('<link href="' + path + 'css/dot.css" rel="stylesheet">');
+            pdoc.head.appendChild(stylelink[0]);
+            side_bar = $("#side_bar");
+            side_bar.appendTo(pdoc.body).show();
+        }
+        $(init);
+    }
+}).resize()
+
+
+$('#model-item li', parent.document).click(function() {
+    $("#side_bar", window.top.document).remove();
+    console.log(pmodelclass);
+});
+
+
+
+var kf_height_obj = $(window.parent.document).find('#kf-iframe') || $(window.parent.document).find('#iframe_kf');
+var kf_height = (kf_height_obj.length > 0) ? kf_height_obj.offset().top : 0;
+var vga_main = $(window.parent.document).find('.model-header').height();
+console.log("vga_main=" + vga_main);
+
+$("#li01").click(function() {
+    window.parent.$("html,body").animate({ scrollTop: ($('#test_201801').offset().top) + kf_height - vga_main }, 800);
+});
+
+$("#li02").click(function() {
+    window.parent.$("html,body").animate({ scrollTop: ($('#test_201802').offset().top) + kf_height - vga_main }, 800);
+});
+
+$("#li03").click(function() {
+    window.parent.$("html,body").animate({ scrollTop: ($('#test_201803').offset().top) + kf_height - vga_main }, 800);
+});
+
+$("#li04").click(function() {
+    window.parent.$("html,body").animate({ scrollTop: ($('#test_201804').offset().top) + kf_height - vga_main }, 800);
+});
+// $("#li05").click(function() {
+//     window.parent.$("html,body").animate({ scrollTop: ($('#test_201805').offset().top) + kf_height - vga_main }, 800);
+// });
+
+
+
+
+
+
+$("#li01").hover(function() {
+    window.parent.$("#li01 .listtext").css('color', '#ff7200');
+    window.parent.$("#li01 .listtext").css('display', 'block');
+    window.parent.$("#li01 .listicon").css('background', '#ff7200');
+    window.parent.$("#li01 .listicon").css('height', '20px');
+
+
+}, function() {
+    window.parent.$("#side_bar #li01 .listtext").css('color', '#fff');
+    window.parent.$("#side_bar #li01 .listtext").css('display', 'none');
+    window.parent.$("#side_bar #li01 .listicon").css('background', '#fff');
+    window.parent.$("#side_bar #li01 .listicon").css('height', '12px');
+})
+
+
+$("#li02").hover(function() {
+    window.parent.$("#li02 .listtext").css('color', '#ff7200');
+    window.parent.$("#li02 .listtext").css('display', 'block');
+    window.parent.$("#li02 .listicon").css('background', '#ff7200');
+    window.parent.$("#li02 .listicon").css('height', '20px');
+
+}, function() {
+    window.parent.$("#li02 .listtext").css('color', '#fff');
+    window.parent.$("#li02 .listtext").css('display', 'none');
+    window.parent.$("#li02 .listicon").css('background', '#fff');
+    window.parent.$("#li02 .listicon").css('height', '12px');
+})
+
+$("#li03").hover(function() {
+    window.parent.$("#li03 .listtext").css('color', '#ff7200');
+    window.parent.$("#li03 .listtext").css('display', 'block');
+    window.parent.$("#li03 .listicon").css('background', '#ff7200');
+    window.parent.$("#li03 .listicon").css('height', '20px');
+
+}, function() {
+    window.parent.$("#li03 .listtext").css('color', '#fff');
+    window.parent.$("#li03 .listtext").css('display', 'none');
+    window.parent.$("#li03 .listicon").css('background', '#fff');
+    window.parent.$("#li03 .listicon").css('height', '12px');
+})
+
+
+$("#li04").hover(function() {
+    window.parent.$("#li04 .listtext").css('color', '#ff7200');
+    window.parent.$("#li04 .listtext").css('display', 'block');
+    window.parent.$("#li04 .listicon").css('background', '#ff7200');
+    window.parent.$("#li04 .listicon").css('height', '20px');
+
+}, function() {
+    window.parent.$("#li04 .listtext").css('color', '#fff');
+    window.parent.$("#li04 .listtext").css('display', 'none');
+    window.parent.$("#li04 .listicon").css('background', '#fff');
+    window.parent.$("#li04 .listicon").css('height', '12px');
+})
+
+
+// $("#li05").hover(function() {
+//     window.parent.$("#li05 .listtext").css('color', '#ff7200');
+//     window.parent.$("#li05 .listtext").css('display', 'block');
+//     window.parent.$("#li05 .listicon").css('background', '#ff7200');
+//     window.parent.$("#li05 .listicon").css('height', '20px');
+
+// }, function() {
+//     window.parent.$("#li05 .listtext").css('color', '#fff');
+//     window.parent.$("#li05 .listtext").css('display', 'none');
+//     window.parent.$("#li05 .listicon").css('background', '#fff');
+//     window.parent.$("#li05 .listicon").css('height', '12px');
+// })
+
+
+
+
+$(window.parent).scroll(function() {
+
+    var scrollValmbspec = ($('#test_201801').offset().top) - 100;
+    var scrollVallight = ($('#test_201802').offset().top) - 100;
+    var scrollValaudio = ($('#test_201803').offset().top) - 100;
+    var scrollValsmartfan5 = ($('#test_201804').offset().top) - 100;
+    // var scrollValperformance = ($('#test_201805').offset().top) - 100;
+
+
+
+    var nowscrollVal = $(this).scrollTop();
+    /*
+    console.log(scrollVallight);
+    console.log(scrollValaudio);
+    console.log(scrollValsmartfan5);
+    console.log(scrollValperformance);
+    console.log(scrollValcon);
+    console.log(scrollValultra);
+    console.log(scrollValweapon);
+    console.log(nowscrollVal);
+    */
+    if (nowscrollVal > scrollValmbspec) {
+        window.parent.$("#li01 .listicon").css('background', '#ff7200');
+        window.parent.$("#li02 .listicon").css('background', '#fff');
+        window.parent.$("#li03 .listicon").css('background', '#fff');
+        window.parent.$("#li04 .listicon").css('background', '#fff');
+        // window.parent.$("#li05 .listicon").css('background', '#fff');
+
+    }
+
+    if (nowscrollVal > scrollVallight) {
+        window.parent.$("#li01 .listicon").css('background', '#fff');
+        window.parent.$("#li02 .listicon").css('background', '#ff7200');
+        window.parent.$("#li03 .listicon").css('background', '#fff');
+        window.parent.$("#li04 .listicon").css('background', '#fff');
+        // window.parent.$("#li05 .listicon").css('background', '#fff');
+
+    }
+
+    if (nowscrollVal > scrollValaudio) {
+        window.parent.$("#li01 .listicon").css('background', '#fff');
+        window.parent.$("#li02 .listicon").css('background', '#fff');
+        window.parent.$("#li03 .listicon").css('background', '#ff7200');
+        window.parent.$("#li04 .listicon").css('background', '#fff');
+        // window.parent.$("#li05 .listicon").css('background', '#fff');
+
+    }
+
+    if (nowscrollVal > scrollValsmartfan5) {
+        window.parent.$("#li01 .listicon").css('background', '#fff');
+        window.parent.$("#li02 .listicon").css('background', '#fff');
+        window.parent.$("#li03 .listicon").css('background', '#fff');
+        window.parent.$("#li04 .listicon").css('background', '#ff7200');
+        // window.parent.$("#li05 .listicon").css('background', '#fff');
+
+    }
+    // if (nowscrollVal > scrollValperformance) {
+    //     window.parent.$("#li01 .listicon").css('background', '#fff');
+    //     window.parent.$("#li02 .listicon").css('background', '#fff');
+    //     window.parent.$("#li03 .listicon").css('background', '#fff');
+    //     window.parent.$("#li04 .listicon").css('background', '#fff');
+    //     window.parent.$("#li05 .listicon").css('background', '#ff7200');
+
+    // }
+
+
+
+
+
+
+
+});

@@ -1,0 +1,70 @@
+.handle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    margin-left: -2px;
+    background: rgba(255, 255, 255, .1);
+    cursor: ew-resize;
+}
+
+.handle_0 {
+    /* Thin line seperator */
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    margin-left: -2px;
+    background: rgba(255, 255, 255, .1);
+    cursor: ew-resize;
+    animation: linemove 3s ease-in-out;
+    /* transition: 2s; */
+}
+
+.handle_ani {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    margin-left: -2px;
+    background: rgba(255, 255, 255, .1);
+    cursor: ew-resize;
+}
+
+.handle:after {
+    /* Big orange knob  */
+    position: absolute;
+    top: 85%;
+    width: 80px;
+    height: 40px;
+    margin: -40px 0 0 -40px;
+    content: '﹤﹥';
+    color: #efefef;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    background: rgba(150, 150, 150, 0.6);
+    border: 0px solid #fff;
+    border-radius: 80px;
+    transition: all 0.3s ease;
+}
+
+.draggable:after {
+    width: 90px;
+    height: 30px;
+    margin: -45px 0 0 -45px;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+#H5_scroll {
+    cursor: url('../innergigabyteimages/boom/002.cur'), default;
+}
+
+#H5_scroll.cursor-_auto {
+    cursor: auto;
+}

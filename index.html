@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Com Project</title>
+
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -20,8 +21,8 @@
       </a>
       <div>
         <ul id="navbar">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a class="active" href="index.html">HOME</a></li>
+          <li><a href="shop.html">SHOP</a></li>
 
           <li>
             <a id="lg-bag" href="cart.html"
@@ -39,11 +40,10 @@
       </div>
     </section>
     <section id="hero">
-      <h4>Trade-in-offer</h4>
-      <h2>SUPER VALUE DEALS</h2>
-      <h1>On all products</h1>
-      <p>Save more with coupons & up to 70% off!</p>
-      <button>Shop Now</button>
+      <video autoplay muted loop id="bg-video">
+        <source src="hero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </section>
     <section id="feature" class="section-p1">
       <div class="fe-box">
@@ -71,11 +71,18 @@
       <h2>Featured Products</h2>
       <p>Summer Collection New Modern Design</p>
       <div class="pro-container">
-        <div class="pro">
-          <img src="img/products/f1.jpg" alt="" />
+        <div class="pro" data-product-id="nvidia-rtx3090">
+          <img
+            src="img/products/rtx30901.png"
+            onclick="window.location.href='sproduct.html?product=nvidia-rtx3090';"
+            alt="Nvidia RTX 3090"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Nvidia</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=nvidia-rtx3090">
+              <h5>RTX 3090 Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -83,16 +90,23 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$1499</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/f2.jpg" alt="" />
+
+        <div class="pro" data-product-id="nvidia-rtx3080">
+          <img
+            src="img/products/rtx30801.png"
+            onclick="window.location.href='sproduct.html?product=nvidia-rtx3080';"
+            alt="Nvidia RTX 3080"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Nvidia</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=nvidia-rtx3080">
+              <h5>RTX 3080 Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -100,16 +114,23 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$799</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/f3.jpg" alt="" />
+
+        <div class="pro" data-product-id="nvidia-rtx3070">
+          <img
+            src="img/products/rtx30701.png"
+            onclick="window.location.href='sproduct.html?product=nvidia-rtx3070';"
+            alt="Nvidia RTX 3070"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Nvidia</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=nvidia-rtx3070">
+              <h5>RTX 3070 Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -117,16 +138,23 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$499</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/f4.jpg" alt="" />
+
+        <div class="pro" data-product-id="nvidia-rtx3060ti">
+          <img
+            src="img/products/rtx3060ti1.png"
+            onclick="window.location.href='sproduct.html?product=nvidia-rtx3060ti';"
+            alt="Nvidia RTX 3060 Ti"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Nvidia</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=nvidia-rtx3060ti">
+              <h5>RTX 3060 Ti Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -134,16 +162,23 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$399</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/f5.jpg" alt="" />
+
+        <div class="pro" data-product-id="nvidia-rtx2060">
+          <img
+            src="img/products/rtx20601.png"
+            onclick="window.location.href='sproduct.html?product=nvidia-rtx2060';"
+            alt="Nvidia RTX 2060"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Nvidia</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=nvidia-rtx2060">
+              <h5>RTX 2060 Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -151,16 +186,23 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$299</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/f6.jpg" alt="" />
+
+        <div class="pro" data-product-id="nvidia-gtx1660ti">
+          <img
+            src="img/products/gtx1660ti1.png"
+            onclick="window.location.href='sproduct.html?product=nvidia-gtx1660ti';"
+            alt="Nvidia GTX 1660 Ti"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Nvidia</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=nvidia-gtx1660ti">
+              <h5>GTX 1660 Ti Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -168,16 +210,23 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$219</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/f7.jpg" alt="" />
+
+        <div class="pro" data-product-id="nvidia-gtx1650">
+          <img
+            src="img/products/gtx16501.png"
+            onclick="window.location.href='sproduct.html?product=nvidia-gtx1650';"
+            alt="Nvidia GTX 1650"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Nvidia</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=nvidia-gtx1650">
+              <h5>GTX 1650 Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -185,16 +234,23 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$169</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/f8.jpg" alt="" />
+
+        <div class="pro" data-product-id="nvidia-gtx1080ti">
+          <img
+            src="img/products/gtx1080ti1.png"
+            onclick="window.location.href='sproduct.html?product=nvidia-gtx1080ti';"
+            alt="Nvidia GTX 1080 Ti"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Nvidia</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=nvidia-gtx1080ti">
+              <h5>GTX 1080 Ti Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -202,10 +258,9 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$699</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
       </div>
     </section>
@@ -218,11 +273,18 @@
       <h2>New Arrivals</h2>
       <p>Summer Collection New Modern Design</p>
       <div class="pro-container">
-        <div class="pro">
-          <img src="img/products/n1.jpg" alt="" />
+        <div class="pro" data-product-id="nvidia-quadro">
+          <img
+            src="img/products/quad1.png"
+            onclick="window.location.href='sproduct.html?product=nvidia-quadro';"
+            alt="Nvidia Quadro"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Nvidia</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=nvidia-quadro">
+              <h5>Quadro RTX Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -230,16 +292,24 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$4000</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/n2.jpg" alt="" />
+
+        <!-- Radeon Cards -->
+        <div class="pro" data-product-id="radeon-rx6900xt">
+          <img
+            src="img/products/69001.png"
+            onclick="window.location.href='sproduct.html?product=radeon-rx6900xt';"
+            alt="Radeon RX 6900 XT"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Radeon</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=radeon-rx6900xt">
+              <h5>RX 6900 XT Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -247,16 +317,23 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$999</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/n3.jpg" alt="" />
+
+        <div class="pro" data-product-id="radeon-rx6800">
+          <img
+            src="img/products/68001.png"
+            onclick="window.location.href='sproduct.html?product=radeon-rx6800';"
+            alt="Radeon RX 6800"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Radeon</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=radeon-rx6800">
+              <h5>RX 6800 Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -264,16 +341,23 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$649</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/n4.jpg" alt="" />
+
+        <div class="pro" data-product-id="radeon-rx6700xt">
+          <img
+            src="img/products/67001.png"
+            onclick="window.location.href='sproduct.html?product=radeon-rx6700xt';"
+            alt="Radeon RX 6700 XT"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Radeon</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=radeon-rx6700xt">
+              <h5>RX 6700 XT Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -281,16 +365,23 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$479</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/n5.jpg" alt="" />
+
+        <div class="pro" data-product-id="nvidia-rtx3050">
+          <img
+            src="img/products/30501.png"
+            onclick="window.location.href='sproduct.html?product=nvidia-rtx3050';"
+            alt="Nvidia RTX 3050"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Nvidia</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=nvidia-rtx3050">
+              <h5>RTX 3050 Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -298,16 +389,24 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$249</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/n6.jpg" alt="" />
+
+        <!-- Nvidia RTX 2080 Ti -->
+        <div class="pro" data-product-id="nvidia-rtx2080ti">
+          <img
+            src="img/products/2080ti1.png"
+            onclick="window.location.href='sproduct.html?product=nvidia-rtx2080ti';"
+            alt="Nvidia RTX 2080 Ti"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Nvidia</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=nvidia-rtx2080ti">
+              <h5>RTX 2080 Ti Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -315,16 +414,24 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$999</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/n7.jpg" alt="" />
+
+        <!-- Radeon RX 5800 XT -->
+        <div class="pro" data-product-id="radeon-rx5700xt">
+          <img
+            src="img/products/5700xt1.png"
+            onclick="window.location.href='sproduct.html?product=radeon-rx5700xt';"
+            alt="Radeon RX 5700 XT"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Radeon</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=radeon-rx5700xt">
+              <h5>RX 5700 XT Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -332,16 +439,24 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$1299</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
-        <div class="pro">
-          <img src="img/products/n8.jpg" alt="" />
+
+        <!-- Radeon RX 5600 XT -->
+        <div class="pro" data-product-id="radeon-rx5600xt">
+          <img
+            src="img/products/56001.png"
+            onclick="window.location.href='sproduct.html?product=radeon-rx5600xt';"
+            alt="Radeon RX 5600 XT"
+          />
           <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <span>Radeon</span>
+            <!-- Wrap the product name in an <a> tag to make it clickable -->
+            <a href="sproduct.html?product=radeon-rx5600xt">
+              <h5>RX 5600 XT Graphics Card</h5>
+            </a>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -349,10 +464,9 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$279</h4>
           </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
         </div>
       </div>
     </section>
@@ -399,7 +513,7 @@
     </section>
     <footer class="section-p1">
       <div class="col">
-        <img src="img/logo.png" alt="" />
+        <img src="img/logo.png" alt="" class="logo" />
         <h4>Contact</h4>
         <p>
           <strong>Address: </strong> 562 Wellington Road, Street 32, San
@@ -448,7 +562,7 @@
       <div class="copyright">
         <p>© 2025 Hussain Nazir Works. All Right Reserved</p>
       </div>
-    </footer>
+      <script src="index-shop.js"></script>
 
     <script src="script.js"></script>
   </body>

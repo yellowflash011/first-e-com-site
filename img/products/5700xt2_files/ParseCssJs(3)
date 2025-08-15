@@ -1,0 +1,220 @@
+  @charset "utf-8";
+  @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+  @import url(https://fonts.googleapis.com/css?family=Aldrich);
+  @font-face {
+      font-family: 'AORUS';
+      src: url('../innergigabytefonts/AORUS.woff') format("woff");
+  }
+  /* CSS Document */
+  
+   html,
+     body {
+      background: #010000;
+      font-family: 'Arial',"微軟正黑體",Microsoft JhengHei,"微軟雅黑體",Microsoft YaHei,SimHei, "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","新細明體", Arial,Verdana,Helvetica,sans-serif;
+      width: 100%;
+  }
+  
+  .InnerGIGABYTEContent a {
+      text-decoration: none;
+      color: #0CF;
+  }
+  
+  .InnerGIGABYTEContent h2 {
+      font-family: "Aldrich", "微軟正黑體", Microsoft JhengHei, "微軟雅黑體", Microsoft YaHei, SimHei, "新細明體", Arial, Verdana, Helvetica, sans-serif;
+      color: #ff6400;
+      font-size: 48px;
+      letter-spacing: 2px;
+      font-weight: bold;
+  }
+  
+/*   p {
+      color: #ddd;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 1px;
+  } */
+  
+  .InnerGIGABYTEContent .aorus_font_title {
+      font-family: "AORUS", "微軟正黑體", Microsoft JhengHei, "微軟雅黑體", Microsoft YaHei, SimHei, "新細明體", Arial, Verdana, Helvetica, sans-serif;
+  }
+  
+  .InnerGIGABYTEContent .aorus_font {
+      font-family: "Aldrich", "微軟正黑體", Microsoft JhengHei, "微軟雅黑體", Microsoft YaHei, SimHei, "新細明體", Arial, Verdana, Helvetica, sans-serif;
+  }
+  
+  .InnerGIGABYTEContent .aorus_font_01 {
+      font-family: 'Titillium Web', sans-serif, '微軟正黑體', Microsoft JhengHei;
+  }
+  
+  .InnerGIGABYTEContent .aorus_font_title_h1 {
+      /* text-shadow: 0px 0px 10px #ff6400, 0px 0px 10px #ff6400, 0px 0px 10px #ff6400; */
+      letter-spacing: 5px;
+  }
+  /* font */
+  
+  @media screen and (min-width: 1500px) {
+    .InnerGIGABYTEContent .performance_h1 {
+          color: #fff;
+          font-size: 60px;
+          font-weight: bold;
+          letter-spacing: 5px;
+      }
+      .InnerGIGABYTEContent .performance_h2 {
+          font-weight: bold;
+          font-size: 32px;
+          color: #eee;
+          letter-spacing: 2px;
+      }
+      .InnerGIGABYTEContent .performance_h3 {
+          font-size: 18px;
+          color: #eee;
+          letter-spacing: 1px;
+      }
+      .InnerGIGABYTEContent .performance_h3_shadow {
+          font-size: 18px;
+          color: #eee;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333;
+      }
+      .InnerGIGABYTEContent .aorus_color_content {
+          padding: 2% 25% 0 25%;
+      }
+  }
+  
+  @media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .InnerGIGABYTEContent .performance_h1 {
+          color: #fff;
+          font-size: 50px;
+          font-weight: bold;
+          letter-spacing: 5px;
+      }
+      .InnerGIGABYTEContent .performance_h2 {
+          font-weight: bold;
+          font-size: 25px;
+          color: #eee;
+          letter-spacing: 2px;
+      }
+      .InnerGIGABYTEContent .performance_h3 {
+          font-size: 18px;
+          color: #eee;
+          letter-spacing: 1px;
+      }
+      .InnerGIGABYTEContent .performance_h3_shadow {
+          font-size: 18px;
+          color: #eee;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333;
+      }
+      .InnerGIGABYTEContent .aorus_color_content {
+          padding: 3% 20% 0 20%;
+      }
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .InnerGIGABYTEContent .performance_h1 {
+          color: #eee;
+          font-size: 38px;
+          font-weight: bold;
+          letter-spacing: 2px;
+      }
+      .InnerGIGABYTEContent .performance_h2 {
+          font-weight: bold;
+          font-size: 21px;
+          color: #eee;
+          letter-spacing: 2px;
+          line-height: 28px;
+      }
+      .InnerGIGABYTEContent .performance_h3 {
+          font-size: 16px;
+          color: #eee;
+          letter-spacing: 1px;
+      }
+      .InnerGIGABYTEContent .performance_h3_shadow {
+          font-size: 16px;
+          color: #eee;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333;
+      }
+      .InnerGIGABYTEContent .aorus_color_content {
+          padding: 3% 14% 0 14%;
+      }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .InnerGIGABYTEContent .performance_h1 {
+          color: #eee;
+          font-size: 35px;
+          font-weight: bold;
+          letter-spacing: 2px;
+      }
+      .InnerGIGABYTEContent .performance_h2 {
+          font-weight: bold;
+          font-size: 20px;
+          color: #eee;
+          letter-spacing: 2px;
+      }
+      .InnerGIGABYTEContent .performance_h3 {
+          font-size: 16px;
+          color: #eee;
+          letter-spacing: 1px;
+      }
+      .InnerGIGABYTEContent .performance_h3_shadow {
+          font-size: 16px;
+          color: #eee;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333;
+      }
+      .InnerGIGABYTEContent .aorus_color_content {
+          padding: 3% 14% 0 14%;
+      }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .InnerGIGABYTEContent p {
+          line-height: 23px;
+          /* padding: 1%; */
+      }
+      .InnerGIGABYTEContent .performance_h1 {
+          color: #eee;
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 2px;
+      }
+      .InnerGIGABYTEContent .performance_h2 {
+          font-weight: bold;
+          font-size: 18px;
+          color: #eee;
+          letter-spacing: 2px;
+      }
+      .InnerGIGABYTEContent .performance_h3 {
+          font-size: 14px;
+          color: #eee;
+          letter-spacing: 1px;
+      }
+      .InnerGIGABYTEContent .performance_h3_shadow {
+          font-size: 14px;
+          color: #eee;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333, 1px 1px 3px #333;
+      }
+      .InnerGIGABYTEContent .aorus_color_content {
+          padding: 3% 10% 0 10%;
+      }
+      .InnerGIGABYTEContent .aorus_vr_bg {
+          background-image: none;
+          background-size: 80%;
+          background-repeat: no-repeat;
+          padding: 20% 0 0 0;
+          margin: 0;
+      }
+      .InnerGIGABYTEContent .color_effect_content {
+          padding-top: 4%;
+          text-align: center;
+      }
+      .InnerGIGABYTEContent .color_picker_panel {
+          display: block;
+          text-align: center;
+          position: relative;
+          margin: auto;
+      }
+  }

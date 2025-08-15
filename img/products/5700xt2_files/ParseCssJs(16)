@@ -1,0 +1,77 @@
+var keyshotVR;
+var myVar = null;
+function initKeyShotVR() {
+    var nameOfDiv = "KeyShotVR";
+    var folderName = "08_VR.823";
+    var viewPortWidth = 1920;
+    var viewPortHeight = 788;
+    var backgroundColor = "none";
+    var uCount = 18;
+    var vCount = 1;
+    var uWrap = true;
+    var vWrap = false;
+    var uMouseSensitivity = -0.05;
+    var vMouseSensitivity = 1;
+    var uStartIndex = 14;
+    var vStartIndex = 0;
+    var minZoom = 1;
+    var maxZoom = 1;
+    var rotationDamping = 0.96;
+    var downScaleToBrowser = true;
+    var addDownScaleGUIButton = false;
+    var downloadOnInteraction = false;
+    var imageExtension = "jpg";
+    var showLoading = true;
+    var loadingIcon = "AORUS.png"; // Set to empty string for default icon.
+    var allowFullscreen = false; // Double-click in desktop browsers for fullscreen.
+    var uReverse = false;
+    var vReverse = false;
+    var hotspots = {};
+
+    keyshotVR = new keyshotVR(nameOfDiv, folderName, viewPortWidth, viewPortHeight, backgroundColor, uCount, vCount, uWrap, vWrap, uMouseSensitivity, vMouseSensitivity, uStartIndex, vStartIndex, minZoom, maxZoom, rotationDamping, downScaleToBrowser, addDownScaleGUIButton, downloadOnInteraction, imageExtension, showLoading, loadingIcon, allowFullscreen, uReverse, vReverse, hotspots);
+}
+
+
+
+function addLoadEvent(initKeyShotVR) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = initKeyShotVR;
+       
+    } else {
+        window.onload = function() {
+            if (oldonload) {
+                oldonload();
+            }
+            initKeyShotVR();
+        }
+    }
+}
+$( document ).ready(function() {
+	addLoadEvent(initKeyShotVR);
+	myVar = setInterval(function(){ setHeightinterval(); }, 8000);
+	
+});
+
+function setHeightinterval(){	
+	var img = $('img#backbuffer');	
+	if(img.length > 0 ){
+		var h = 788;
+		var w =1920;
+		var nowWid = $(window).width();
+		var percentH = Math.ceil(((nowWid/w)*h));
+        document.getElementById("turntable").style.height = "1500";
+		if($('#turntable').height()!==percentH){
+			$('#turntable').height(percentH);
+		}
+		if($('#turntable').next().height()!==percentH){
+			$('#turntable').next().height(percentH);
+		}
+		if($('#KeyShotVR').height()!==percentH){
+			$('#KeyShotVR').height(percentH);
+		}
+		// clearInterval(myVar);
+		// myVar = null;
+	}
+
+}

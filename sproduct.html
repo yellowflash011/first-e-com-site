@@ -4,28 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Com Project</title>
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
-
-    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- Header Section -->
     <section id="header">
-      <a class="header-img" href="">
+      <a class="header-img" href="index.html">
         <img src="img/logo.png" class="logo" alt="LOGO" />
       </a>
       <div>
         <ul id="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="shop.html">SHOP</a></li>
           <li>
             <a id="lg-bag" href="cart.html"
-              ><i class="fa fa-shopping-cart"></i>
-            </a>
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
           </li>
           <a href="#" id="close">
             <i class="far fa-times"></i>
@@ -39,159 +39,47 @@
     </section>
     <section id="prodetails" class="section-p1">
       <div class="single-pro-image">
-        <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="" />
-
+        <!-- Main Image for Product -->
+        <img id="MainImg" width="100%" alt="Product Image" />
         <div class="small-img-group">
           <div class="small-img-col">
-            <img
-              src="img/products/f2.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
+            <img id="SmallImg1" width="100%" class="small-img" alt="" />
           </div>
           <div class="small-img-col">
-            <img
-              src="img/products/f3.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
+            <img id="SmallImg2" width="100%" class="small-img" alt="" />
           </div>
           <div class="small-img-col">
-            <img
-              src="img/products/f4.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
-          </div>
-          <div class="small-img-col">
-            <img
-              src="img/products/f1.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
+            <img id="SmallImg3" width="100%" class="small-img" alt="" />
           </div>
         </div>
       </div>
 
       <div class="single-pro-details">
-        <h6>Home / T-Shirt</h6>
-        <h4>Men's Fashion T Shirt</h4>
-        <h2>$139.00</h2>
-        <select>
-          <option>Select Size</option>
-          <option>XL</option>
-          <option>XXL</option>
-          <option>Small</option>
-          <option>Large</option>
+        <h6 id="category">Home / Product</h6>
+        <h4 id="product-name">Product Name</h4>
+        <h2 id="product-price">$0</h2>
+
+        <!-- Select Memory Size (GPU Memory Options) -->
+        <select id="memory-select">
+          <option>Select Memory Size</option>
+          <option>4GB</option>
+          <option>8GB</option>
+          <option>12GB</option>
+          <option>24GB</option>
         </select>
-        <input type="number" value="1" />
-        <button class="normal">Add To Cart</button>
+
+        <input type="number" value="1" id="quantity" />
+        <button class="normal" onclick="addToCart()">Add To Cart</button>
+
         <h4>Product Details</h4>
-        <span
-          >The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz.
-          per sq. yd. fabric constructed from 100% cotton, this classic fit
-          preshrunk jersey knit provides unmatched comfort with each wear.
-          Featuring a taped neck and shoulder, and a seamless double-needle
-          collar, and available in a range of colors, it offers it all in the
-          ultimate head-turning package.</span
-        >
-      </div>
-    </section>
-    <section id="product1" class="section-p1">
-      <h2>Featured Products</h2>
-      <p>Summer Collection New Modern Design</p>
-      <div class="pro-container">
-        <div class="pro">
-          <img src="img/products/f1.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
-        </div>
-        <div class="pro">
-          <img src="img/products/f1.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
-        </div>
-        <div class="pro">
-          <img src="img/products/f1.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
-        </div>
-        <div class="pro">
-          <img src="img/products/f1.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-          <!-- Shopping cart icon -->
-        </div>
+        <span id="product-description">Product Description</span>
       </div>
     </section>
 
-    <section id="newsletter" class="section-p1 section-m1">
-      <div class="newstext">
-        <h4>Sign Up For Newsletters</h4>
-        <p>
-          Get E-mail updates about our latest shop and
-          <span>special offers.</span>
-        </p>
-      </div>
-      <div class="form">
-        <input type="text" placeholder="Your email address" />
-        <button class="normal frm-button">Sign Up</button>
-      </div>
-    </section>
+    <!-- Footer Section -->
     <footer class="section-p1">
       <div class="col">
-        <img src="img/logo.png" alt="" />
+        <img src="img/logo.png" alt="" id="imgg" />
         <h4>Contact</h4>
         <p>
           <strong>Address: </strong> 562 Wellington Road, Street 32, San
@@ -242,23 +130,109 @@
       </div>
     </footer>
     <script>
+      // Image switching
       var MainImg = document.getElementById("MainImg");
       var smallimg = document.getElementsByClassName("small-img");
+      for (let i = 0; i < smallimg.length; i++) {
+        smallimg[i].onclick = function () {
+          MainImg.src = smallimg[i].src;
+        };
+      }
 
-      smallimg[0].onclick = function () {
-        MainImg.src = smallimg[0].src;
-      };
-      smallimg[1].onclick = function () {
-        MainImg.src = smallimg[1].src;
-      };
-      smallimg[2].onclick = function () {
-        MainImg.src = smallimg[2].src;
-      };
-      smallimg[3].onclick = function () {
-        MainImg.src = smallimg[3].src;
-      };
+      // Fetch product data
+      fetch("products.json")
+        .then((response) => {
+          if (!response.ok) throw new Error("Failed to fetch products");
+          return response.json();
+        })
+        .then((products) => {
+          const urlParams = new URLSearchParams(window.location.search);
+          const productId = urlParams.get("product");
+          const product = products.find((p) => p.id === productId);
+          if (product) {
+            document.getElementById("product-name").textContent = product.name;
+            document.getElementById("product-price").textContent =
+              product.price;
+            document.getElementById("product-description").textContent =
+              product.description;
+            document.getElementById(
+              "category"
+            ).textContent = `${product.category} / ${product.name}`;
+            document.getElementById("MainImg").src = product.mainImage;
+            document.getElementById("SmallImg1").src =
+              product.images[1] || product.mainImage;
+            document.getElementById("SmallImg2").src =
+              product.images[2] || product.mainImage;
+            document.getElementById("SmallImg3").src =
+              product.images[0] || product.mainImage;
+          } else {
+            document.getElementById("product-name").textContent =
+              "Product Not Found";
+          }
+        })
+        .catch((error) => console.error("Error fetching product data:", error));
+
+      // Initialize cart
+      if (!localStorage.getItem("cart")) {
+        localStorage.setItem("cart", JSON.stringify([]));
+      }
+
+      // Add to cart
+      function addToCart() {
+        const productId = new URLSearchParams(window.location.search).get(
+          "product"
+        );
+        fetch("products.json")
+          .then((response) => {
+            if (!response.ok) throw new Error("Failed to fetch products");
+            return response.json();
+          })
+          .then((products) => {
+            const product = products.find((p) => p.id === productId);
+            if (!product) {
+              alert("Product not found!");
+              return;
+            }
+            const productName = product.name;
+            const productPrice =
+              parseFloat(product.price.replace("$", "")) || 0;
+            const productDescription = product.description;
+            const productImage = product.mainImage;
+            const productQuantity =
+              Math.max(
+                1,
+                parseInt(document.getElementById("quantity").value)
+              ) || 1;
+            const productMemory =
+              document.getElementById("memory-select").value;
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let existingProduct = cart.find(
+              (item) => item.id === productId && item.memory === productMemory
+            );
+            if (existingProduct) {
+              existingProduct.quantity += productQuantity;
+            } else {
+              cart.push({
+                id: productId,
+                name: productName,
+                price: productPrice,
+                description: productDescription,
+                image: productImage,
+                quantity: productQuantity,
+                memory: productMemory,
+              });
+            }
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert(`${productName} (${productMemory}) added to cart!`);
+          })
+          .catch((error) => {
+            console.error("Error adding to cart:", error);
+            alert("Error adding item to cart.");
+          });
+      }
     </script>
 
+    <!-- Optional: Add additional JavaScript if needed -->
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,210 @@
+[
+  {
+    "id": "nvidia-rtx3090",
+    "name": "RTX 3090 Graphics Card",
+    "price": "$1499",
+    "description": "The Nvidia RTX 3090 is a high-performance graphics card for gaming and professional tasks with 24GB of GDDR6X memory.",
+    "category": "Nvidia",
+    "mainImage": "img/products/rtx30901.png",
+    "images": [
+      "img/products/rtx30902.png",
+      "img/products/rtx30901.png",
+      "img/products/rtx30903.png"
+    ]
+  },
+  {
+    "id": "nvidia-rtx3080",
+    "name": "RTX 3080 Graphics Card",
+    "price": "$799",
+    "description": "The Nvidia RTX 3080 offers high-end performance for gaming and creative professionals with 10GB of GDDR6X memory.",
+    "category": "Nvidia",
+    "mainImage": "img/products/rtx30801.png",
+    "images": [
+      "img/products/rtx30802.png",
+      "img/products/rtx30801.png",
+      "img/products/rtx30803.png"
+    ]
+  },
+  {
+    "id": "nvidia-rtx3070",
+    "name": "RTX 3070 Graphics Card",
+    "price": "$499",
+    "description": "The Nvidia RTX 3070 delivers incredible performance for 1440p and 4K gaming with 8GB of GDDR6 memory.",
+    "category": "Nvidia",
+    "mainImage": "img/products/rtx30701.png",
+    "images": [
+      "img/products/rtx30702.png",
+      "img/products/rtx30701.png",
+      "img/products/rtx30703.png"
+    ]
+  },
+  {
+    "id": "nvidia-rtx3060ti",
+    "name": "RTX 3060 Ti Graphics Card",
+    "price": "$399",
+    "description": "The Nvidia RTX 3060 Ti is designed for 1080p and 1440p gaming with 8GB of GDDR6 memory and great ray tracing performance.",
+    "category": "Nvidia",
+    "mainImage": "img/products/rtx3060ti1.png",
+    "images": [
+      "img/products/rtx3060ti2.png",
+      "img/products/rtx3060ti1.png",
+      "img/products/rtx3060ti3.png"
+    ]
+  },
+  {
+    "id": "nvidia-rtx2060",
+    "name": "RTX 2060 Graphics Card",
+    "price": "$299",
+    "description": "The Nvidia RTX 2060 is an affordable option with ray tracing for high-quality 1080p gaming, featuring 6GB of GDDR6 memory.",
+    "category": "Nvidia",
+    "mainImage": "img/products/rtx20601.png",
+    "images": [
+      "img/products/rtx20602.png",
+      "img/products/rtx20601.png",
+      "img/products/rtx20603.png"
+    ]
+  },
+  {
+    "id": "nvidia-gtx1660ti",
+    "name": "GTX 1660 Ti Graphics Card",
+    "price": "$219",
+    "description": "The GTX 1660 Ti provides excellent performance for 1080p gaming without ray tracing, featuring 6GB of GDDR5 memory.",
+    "category": "Nvidia",
+    "mainImage": "img/products/gtx1660ti1.png",
+    "images": [
+      "img/products/gtx1660ti2.png",
+      "img/products/gtx1660ti1.png",
+      "img/products/gtx1660ti3.png"
+    ]
+  },
+  {
+    "id": "nvidia-gtx1650",
+    "name": "GTX 1650 Graphics Card",
+    "price": "$169",
+    "description": "The GTX 1650 is a budget-friendly option for 1080p gaming, with 4GB of GDDR5 memory.",
+    "category": "Nvidia",
+    "mainImage": "img/products/gtx16501.png",
+    "images": [
+      "img/products/gtx16502.png",
+      "img/products/gtx16501.pngg",
+      "img/products/gtx16503.png"
+    ]
+  },
+  {
+    "id": "nvidia-gtx1080ti",
+    "name": "GTX 1080 Ti Graphics Card",
+    "price": "$699",
+    "description": "The GTX 1080 Ti provides top-tier 4K gaming performance with 11GB of GDDR5X memory, perfect for high-end gaming setups.",
+    "category": "Nvidia",
+    "mainImage": "img/products/gtx1080ti1.png",
+    "images": [
+      "img/products/gtx1080ti2.png",
+      "img/products/gtx1080ti1.png",
+      "img/products/gtx1080ti3.png"
+    ]
+  },
+  {
+    "id": "nvidia-quadro",
+    "name": "Quadro RTX Graphics Card",
+    "price": "$4000",
+    "description": "Nvidia Quadro RTX is a high-end workstation graphics card designed for professional applications with exceptional performance and reliability.",
+    "category": "Nvidia",
+    "mainImage": "img/products/quad1.png",
+    "images": [
+      "img/products/quad2.png",
+      "img/products/quad1.png",
+      "img/products/quad3.png"
+    ]
+  },
+  {
+    "id": "radeon-rx6900xt",
+    "name": "RX 6900 XT Graphics Card",
+    "price": "$999",
+    "description": "The Radeon RX 6900 XT is AMD's top-tier graphics card, providing superior 4K gaming and excellent ray tracing performance.",
+    "category": "Radeon",
+    "mainImage": "img/products/69001.png",
+    "images": [
+      "img/products/69002.png",
+      "img/products/69001.png",
+      "img/products/69003.png"
+    ]
+  },
+  {
+    "id": "radeon-rx6800",
+    "name": "RX 6800 Graphics Card",
+    "price": "$649",
+    "description": "The Radeon RX 6800 offers high-performance gaming and outstanding performance at 1440p resolution with 16GB of GDDR6 memory.",
+    "category": "Radeon",
+    "mainImage": "img/products/68001.png",
+    "images": [
+      "img/products/68002.png",
+      "img/products/68001.png",
+      "img/products/68003.png"
+    ]
+  },
+  {
+    "id": "radeon-rx6700xt",
+    "name": "RX 6700 XT Graphics Card",
+    "price": "$479",
+    "description": "The RX 6700 XT provides a powerful 1440p gaming experience, offering excellent performance with 12GB of GDDR6 memory.",
+    "category": "Radeon",
+    "mainImage": "img/products/67001.png",
+    "images": [
+      "img/products/67002.png",
+      "img/products/67001.png",
+      "img/products/67003.png"
+    ]
+  },
+  {
+    "id": "nvidia-rtx3050",
+    "name": "RTX 3050 Graphics Card",
+    "price": "$249",
+    "description": "The RTX 3050 is an entry-level graphics card from Nvidia, offering great 1080p gaming performance with 4GB of GDDR6 memory and ray tracing.",
+    "category": "Nvidia",
+    "mainImage": "img/products/30501.png",
+    "images": [
+      "img/products/30502.png",
+      "img/products/30501.png",
+      "img/products/30503.png"
+    ]
+  },
+  {
+    "id": "nvidia-rtx2080ti",
+    "name": "RTX 2080 Ti Graphics Card",
+    "price": "$999",
+    "description": "The RTX 2080 Ti is a high-end graphics card providing exceptional performance at 4K and great ray tracing capabilities.",
+    "category": "Nvidia",
+    "mainImage": "img/products/2080ti1.png",
+    "images": [
+      "img/products/2080ti2.png",
+      "img/products/2080ti1.png",
+      "img/products/2080ti3.png"
+    ]
+  },
+  {
+    "id": "radeon-rx5700xt",
+    "name": "RX 5700 XT Graphics Card",
+    "price": "$1299",
+    "description": "The RX 5700 XT is designed for extreme gaming at 4K resolution, offering excellent performance with 16GB of GDDR6 memory.",
+    "category": "Radeon",
+    "mainImage": "img/products/5700xt1.png",
+    "images": [
+      "img/products/5700xt2.png",
+      "img/products/5700xt1.png",
+      "img/products/5700xt3.png"
+    ]
+  },
+  {
+    "id": "radeon-rx5600xt",
+    "name": "RX 5600 XT Graphics Card",
+    "price": "$279",
+    "description": "The RX 5600 XT offers great performance for 1080p gaming with 6GB of GDDR6 memory at an affordable price.",
+    "category": "Radeon",
+    "mainImage": "img/products/5700xt1.png",
+    "images": [
+      "img/products/5700xt2.png",
+      "img/products/5700xt1.png",
+      "img/products/5700xt3.png"
+    ]
+  }
+]

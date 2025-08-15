@@ -1,0 +1,127 @@
+      #colors {
+  width: 195px;
+  height: 125px;
+  border: 1px solid rgb(20, 20, 20);
+  border-radius: 6px;
+  padding: 1.5px 3.5px 1.5px 3.5px;
+  background-image: linear-gradient(bottom, rgba(247,247,247, 0.8) 40%, rgba(230,230,230, 0.8) 70%);
+  background-image: -o-linear-gradient(bottom, rgba(247,247,247, 0.8) 40%, rgba(230,230,230, 0.8) 70%);
+  background-image: -moz-linear-gradient(bottom, rgba(247,247,247, 0.8) 40%, rgba(230,230,230, 0.8) 70%);
+  background-image: -webkit-linear-gradient(bottom, rgba(247,247,247, 0.8) 40%, rgba(230,230,230, 0.8) 70%);
+  background-image: -ms-linear-gradient(bottom, rgba(247,247,247, 0.8) 40%, rgba(230,230,230, 0.8) 70%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.4, rgba(247,247,247, 0.8)),
+    color-stop(0.7, rgba(230,230,230, 0.8))
+  );
+  box-shadow: 1.5px 1.5px 3px rgba(60, 60, 60, 0.8);
+}
+
+
+#main_color {
+  width: 30px;
+  height: 10px;
+  border: 1.5px solid gold;
+  box-shadow: 0.5px 0.5px 0.5px gray;
+  display: inline-block;
+}
+
+.color {
+  list-style: none;
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+}
+
+.farbtastic {
+  position: relative;
+}
+.farbtastic * {
+  position: absolute;
+  cursor: crosshair;
+}
+.farbtastic, .farbtastic .wheel {
+  width: 97.5px;
+  height: 97.5px;
+}
+.farbtastic .color, .farbtastic .overlay {
+  top: 23.5px;
+  left: 23.5px;
+  width: 50.5px;
+  height: 50.5px;
+}
+.farbtastic .wheel {
+  background: url(../innergigabyteimages/pic/03.png) no-repeat;
+  width: 97.5px;
+  height: 97.5px;
+}
+.farbtastic .overlay {
+  background: url();
+  background-image: url(../innergigabyteimages/pic/02.png);
+  background-repeat:no-repeat;
+}
+.farbtastic .marker {
+  width: 8.5px;
+  height: 8.5px;
+  margin: -4px 0 0 -4px;
+  overflow: hidden; 
+  background: url(../innergigabyteimages/pic/01.png) no-repeat;
+  
+
+}
+
+
+
+
+
+.colorwell.block:hover {
+  opacity: 0.9;
+}
+
+.colorwell.block:active {
+  opacity: 0.7;
+}
+
+/* #colorpicker {
+  padding-left:25%;
+  width:50%;
+  
+} */
+
+#preset_colors {
+  border: 2.5px solid black;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 115px;
+  top: 30px;
+}
+
+#main_color {
+  position: absolute;
+}
+
+
+.showtime{
+  display:none;
+}
+
+.neon {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px #87ceeb, 0 0 7.5px #87ceeb, 0 0 15px deepskyblue, 0 0 15px deepskyblue, 0 0 15px deepskyblue, 0 0 20px deepskyblue, 0 0 25px deepskyblue, 0 0 60px deepskyblue, 0 0 70px deepskyblue, 0 0 80px deepskyblue, 0 0 90px deepskyblue, 0 0 100px skyblue;
+}
+
+.info {
+  margin: 0 auto;
+  text-align: center;
+  color: #87ceeb;
+  text-shadow: 0 0 5px #87ceeb, 0 0 7.5px #87ceeb;
+  font-size: 20px;
+}
+
+

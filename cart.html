@@ -20,10 +20,10 @@
       </a>
       <div>
         <ul id="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="shop.html">SHOP</a></li>
           <li>
-            <a id="lg-bag" href="cart.html"
+            <a id="lg-bag" href="cart.html " class="active"
               ><i class="fa fa-shopping-cart"></i>
             </a>
           </li>
@@ -51,21 +51,12 @@
             <td>Product</td>
             <td>Price</td>
             <td>Quantity</td>
+            <td>Memory</td>
             <td>Subtotal</td>
           </tr>
         </thead>
-
-        <tbody>
-          <tr>
-            <td>
-              <a href="#"><i class="far fa-times-circle"></i></a>
-            </td>
-            <td><img src="img/products/f1.jpg" alt="" /></td>
-            <td>Cartoon Astronaut T-Shirts</td>
-            <td>$118.19</td>
-            <td><input type="number" value="1" /></td>
-            <td>$118.19</td>
-          </tr>
+        <tbody id="cart-items">
+          <!-- Cart items will be dynamically added here -->
         </tbody>
       </table>
     </section>
@@ -84,7 +75,7 @@
         <table>
           <tr>
             <td>Cart Subtotal</td>
-            <td>$ 335</td>
+            <td id="cart-subtotal">$0</td>
           </tr>
           <tr>
             <td>Shipping</td>
@@ -92,16 +83,16 @@
           </tr>
           <tr>
             <td><strong>Total</strong></td>
-            <td><strong>$ 335</strong></td>
+            <td><strong id="cart-total">$0</strong></td>
           </tr>
         </table>
-        <button class="normal">Proceed to checkout</button>
+        <button class="normal">Proceed to Checkout</button>
       </div>
     </section>
 
     <footer class="section-p1">
       <div class="col">
-        <img src="img/logo.png" alt="" />
+        <img src="img/logo.png" alt="" id="imgg" />
         <h4>Contact</h4>
         <p>
           <strong>Address: </strong> 562 Wellington Road, Street 32, San
@@ -151,7 +142,131 @@
         <p>© 2025 Hussain Nazir Works. All Right Reserved</p>
       </div>
     </footer>
+    <script>
+      function displayCart() {
+        let cart;
+        try {
+          cart = JSON.parse(localStorage.getItem("cart")) || [];
+        } catch (error) {
+          console.error("Error parsing cart from localStorage:", error);
+          cart = [];
+        }
+        const cartItemsContainer = document.getElementById("cart-items");
+        if (!cartItemsContainer) {
+          console.error("Cart items container (#cart-items) not found in DOM");
+          return;
+        }
+        cartItemsContainer.innerHTML = "";
+        if (!cart.length) {
+          cartItemsContainer.innerHTML =
+            '<tr><td colspan="7">Your cart is empty</td></tr>';
+          document.getElementById("cart-subtotal").textContent = "$0.00";
+          document.getElementById("cart-total").textContent = "$0.00";
+          console.log("Cart is empty");
+          return;
+        }
+        let subtotal = 0;
+        cart.forEach((item) => {
+          try {
+            const price =
+              typeof item.price === "string"
+                ? parseFloat(item.price.replace("$", "")) || 0
+                : item.price;
+            const row = document.createElement("tr");
+            const cells = [
+              `<a href="#" onclick="removeItem('${item.id}', '${
+                item.memory || ""
+              }')"><i class="far fa-times-circle"></i></a>`,
+              `<img src="${item.image || ""}" alt="${
+                item.name || "Unknown"
+              }" />`,
+              item.name || "Unknown Product",
+              `$${price.toFixed(2)}`,
+              `<input type="number" value="${
+                item.quantity || 1
+              }" min="1" onchange="updateQuantity('${item.id}', '${
+                item.memory || ""
+              }', this.value)" />`,
+              item.memory || "N/A",
+              `$${(item.quantity * price).toFixed(2)}`,
+            ];
+            cells.forEach((cell) => {
+              const td = document.createElement("td");
+              if (typeof cell === "string" && cell.startsWith("<")) {
+                td.innerHTML = cell;
+              } else {
+                td.textContent = cell;
+              }
+              row.appendChild(td);
+            });
+            cartItemsContainer.appendChild(row);
+            subtotal += (item.quantity || 1) * price;
+          } catch (error) {
+            console.error(`Error rendering cart item ${item.id}:`, error);
+          }
+        });
+        const shipping = 0;
+        const total = subtotal + shipping;
+        document.getElementById(
+          "cart-subtotal"
+        ).textContent = `$${subtotal.toFixed(2)}`;
+        document.getElementById("cart-total").textContent = `$${total.toFixed(
+          2
+        )}`;
+        console.log("Cart rendered with", cart.length, "items");
+      }
 
+      function removeItem(productId, memory) {
+        try {
+          let cart = JSON.parse(localStorage.getItem("cart")) || [];
+          cart = cart.filter(
+            (item) => !(item.id === productId && (item.memory || "") === memory)
+          );
+          localStorage.setItem("cart", JSON.stringify(cart));
+          displayCart();
+          console.log(
+            `Removed item ${productId} with memory ${memory || "N/A"}`
+          );
+        } catch (error) {
+          console.error("Error removing item:", error);
+        }
+      }
+
+      function updateQuantity(productId, memory, newQuantity) {
+        try {
+          let cart = JSON.parse(localStorage.getItem("cart")) || [];
+          const item = cart.find(
+            (item) => item.id === productId && (item.memory || "") === memory
+          );
+          if (item) {
+            item.quantity = Math.max(1, parseInt(newQuantity)) || 1;
+            localStorage.setItem("cart", JSON.stringify(cart));
+            displayCart();
+            console.log(
+              `Updated quantity for ${productId} (${memory || "N/A"}) to ${
+                item.quantity
+              }`
+            );
+          } else {
+            console.warn(
+              `Item ${productId} with memory ${
+                memory || "N/A"
+              } not found in cart`
+            );
+          }
+        } catch (error) {
+          console.error("Error updating quantity:", error);
+        }
+      }
+
+      window.onload = function () {
+        try {
+          displayCart();
+        } catch (error) {
+          console.error("Error initializing cart display:", error);
+        }
+      };
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

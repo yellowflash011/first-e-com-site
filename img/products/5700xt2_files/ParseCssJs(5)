@@ -1,0 +1,395 @@
+/* windforce */
+.InnerGIGABYTEContent .vga_windforce {
+    padding: 6% 0 0 0;
+}
+
+.InnerGIGABYTEContent .vga_windforce_content_1 {
+    background-image: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: rgba(30, 30, 30, 0.5);
+    padding: 3% 4% 8% 4%;
+}
+
+.InnerGIGABYTEContent .vga_wind_alternate {
+    padding: 12% 0 0 50px;
+}
+
+.InnerGIGABYTEContent .vga_wind_fan {
+    padding: 5% 5% 0 50px;
+}
+
+.InnerGIGABYTEContent .vga_wind_3d {
+    padding: 0 0 0 50px;
+}
+
+.InnerGIGABYTEContent .vga_wind_3d_word {
+    padding: 10.5% 50px 0 50px;
+}
+
+.InnerGIGABYTEContent .vga_wind_pipe {
+    padding: 0 50px 0 0;
+}
+
+.InnerGIGABYTEContent .vga_wind_pipe_word {
+    padding: 3% 0 0 50px;
+}
+
+.InnerGIGABYTEContent .vga_wind_heat_pipe {
+    padding: 0;
+    margin-top: 0;
+}
+
+.InnerGIGABYTEContent .vga_wind_heat_pipe_word {
+    padding: 5% 5% 0 50px;
+}
+
+.InnerGIGABYTEContent .vga_strong_durable {
+    padding: 0 50px 0 0;
+}
+
+.InnerGIGABYTEContent .vga_strong_durable_word {
+    padding: 5% 3% 0 50px;
+}
+
+.InnerGIGABYTEContent .vga_strong_power {
+    padding: 5% 3% 5% 50px;
+    margin-top: 5%;
+}
+
+.InnerGIGABYTEContent .vga_strong_plate {
+    padding: 5% 3% 0 50px;
+    margin-top: 0%;
+}
+
+.InnerGIGABYTEContent .vga_strong_NV {
+    padding: 5% 3% 5% 50px;
+    margin-top: 5%;
+}
+
+.InnerGIGABYTEContent .vga_total {
+    padding: 7% 0 0 0;
+}
+
+.InnerGIGABYTEContent .vga_utility {
+    padding: 3% 2% 2% 9%;
+}
+
+.InnerGIGABYTEContent .vga_rgb_word {
+    max-width: 750px;
+}
+
+.InnerGIGABYTEContent .vga_strong_warranty {
+    padding: 1% 3% 0 50px;
+    margin-top: 0%;
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .InnerGIGABYTEContent .vga_wind_3d_word {
+        padding: 5% 50px 5% 50px;
+    }
+
+    .InnerGIGABYTEContent .vga_rgb_word {
+        max-width: 650px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .InnerGIGABYTEContent .vga_windforce {
+        padding: 0% 0 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_pipe {
+        padding: 0 30px 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_pipe_word {
+        padding: 3% 2% 0 30px;
+    }
+
+
+    .InnerGIGABYTEContent .vga_windforce_content_1 {
+        background-image: none;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: rgba(30, 30, 30, 0.5);
+        padding: 2% 3% 2% 3%;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_alternate {
+        padding: 9% 0 0 30px;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_fan {
+        padding: 5% 5% 0 30px;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_3d {
+        padding: 0 0 0 30px;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_3d_word {
+        padding: 5% 30px 5% 30px;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_heat_pipe_word {
+        padding: 5% 30px 0 30px;
+    }
+
+    .InnerGIGABYTEContent .vga_strong_durable {
+        padding: 0 30px 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_strong_durable_word {
+        padding: 5% 3% 0 30px;
+    }
+
+    .InnerGIGABYTEContent .vga_strong_power {
+        padding: 3% 3% 5% 30px;
+        margin-top: 5%;
+    }
+
+    .InnerGIGABYTEContent .vga_strong_plate {
+        padding: 5% 3% 0 30px;
+        margin-top: 0%;
+    }
+
+
+    .InnerGIGABYTEContent .vga_strong_NV {
+        padding: 5% 3% 5% 30px;
+        margin-top: 5%;
+    }
+
+    .InnerGIGABYTEContent .vga_rgb_word {
+        max-width: 480px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .InnerGIGABYTEContent .vga_windforce {
+        padding: 0% 0 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_windforce_content_1 {
+        background-image: url('../innergigabyteimages/vga/03.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: rgba(30, 30, 30, 0.5);
+        padding: 3% 2% 8% 2%;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_alternate {
+        padding: 2% 2% 0 2%;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_fan {
+        padding: 2% 2% 0 2%;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_3d {
+        padding: 3% 0 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_3d_word {
+        padding: 2% 0 0 0;
+    }
+
+
+    .InnerGIGABYTEContent .vga_wind_pipe {
+        padding: 0 0 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_pipe_word {
+        padding: 3% 0 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_heat_pipe {
+        padding: 0;
+        margin-top: 3%;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_heat_pipe_word {
+        padding: 2% 2% 0 2%;
+    }
+
+
+    .InnerGIGABYTEContent .vga_strong_durable {
+        padding: 0 3% 0 3%;
+    }
+
+    .InnerGIGABYTEContent .vga_strong_durable_word {
+        padding: 2% 2% 0 2%;
+    }
+
+
+    .InnerGIGABYTEContent .vga_strong_power {
+        padding: 3% 2% 2% 2%;
+        margin-top: 3%;
+    }
+
+
+    .InnerGIGABYTEContent .vga_strong_plate {
+        padding: 3% 2% 0 2%;
+        margin-top: 3%;
+    }
+
+    .InnerGIGABYTEContent .vga_strong_NV {
+        padding: 3% 2% 2% 2%;
+        margin-top: 3%;
+    }
+
+    .InnerGIGABYTEContent .vga_total {
+        padding: 7% 2% 0 2%;
+    }
+
+    .InnerGIGABYTEContent .vga_utility {
+        padding: 3% 4% 2% 4%;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .InnerGIGABYTEContent .vga_windforce {
+        padding: 0% 0 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_windforce_content_1 {
+        background-image: url('../innergigabyteimages/vga/03.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: rgba(30, 30, 30, 0.5);
+        padding: 3% 2% 8% 2%;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_alternate {
+        padding: 2% 2% 0 2%;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_fan {
+        padding: 2% 2% 0 2%;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_3d {
+        padding: 3% 0 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_3d_word {
+        padding: 2% 0 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_pipe {
+        padding: 0 0 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_pipe_word {
+        padding: 3% 0 0 0;
+    }
+
+    .InnerGIGABYTEContent .vga_wind_heat_pipe_word {
+        padding: 2% 2% 0 2%;
+    }
+
+    .InnerGIGABYTEContent .vga_strong_durable {
+        padding: 0 3% 0 3%;
+    }
+
+    .InnerGIGABYTEContent .vga_strong_durable_word {
+        padding: 2% 2% 0 2%;
+    }
+
+    .InnerGIGABYTEContent .vga_strong_power {
+        padding: 3% 2% 2% 2%;
+        margin-top: 3%;
+    }
+
+    .InnerGIGABYTEContent .vga_strong_plate {
+        padding: 3% 2% 0 2%;
+        margin-top: 3%;
+    }
+
+    .InnerGIGABYTEContent .vga_strong_NV {
+        padding: 3% 2% 2% 2%;
+        margin-top: 3%;
+    }
+
+    .InnerGIGABYTEContent .vga_total {
+        padding: 7% 2% 0 2%;
+    }
+
+    .InnerGIGABYTEContent .vga_utility {
+        padding: 3% 4% 2% 4%;
+    }
+
+}
+
+
+/* NV logos  */
+
+.InnerGIGABYTEContent .nv_logo_item {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 0;
+    width: 13.9%;
+    border-left: 1px solid #ddd;
+}
+
+.InnerGIGABYTEContent .nv_logo_item img {
+    font-size: 0;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.InnerGIGABYTEContent .nv_logo_item:nth-child(1) {
+    border-left: 1px solid #222;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .InnerGIGABYTEContent .nv_logo_item {
+        width: 20%;
+    }
+
+    .InnerGIGABYTEContent .nv_logo_item:nth-child(5) {
+        border-left: 1px solid #000;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .InnerGIGABYTEContent .nv_logo_item {
+        width: 30%;
+        border: none;
+    }
+
+    .InnerGIGABYTEContent .nv_logo_item:nth-child(2) {
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+    }
+
+    .InnerGIGABYTEContent .nv_logo_item:nth-child(5) {
+        margin-top: 2%;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .InnerGIGABYTEContent .nv_logo_item {
+        width: 40%;
+        border: none;
+    }
+
+    .InnerGIGABYTEContent .nv_logo_item:nth-child(odd) {
+        border-right: 1px solid #ddd;
+        margin-top: 2%;
+    }
+
+    .InnerGIGABYTEContent .nv_logo_item:nth-child(7) {
+        border-right: 1px solid #000;
+    }
+}

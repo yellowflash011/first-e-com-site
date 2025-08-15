@@ -1,0 +1,520 @@
+/* color */
+
+.aorus_color_content {
+    padding: 3% 25% 0 25%;
+}
+
+.fade_in_speed {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    top: -15px;
+    left: 0px;
+    padding: 0 0 0 0;
+}
+
+.color_effect_content {
+    padding-top: 4%;
+    text-align: left;
+}
+
+.color_picker_panel {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    left: 0;
+    width: 100px;
+}
+
+.cp_content {
+    height: 400px;
+    overflow: hidden;
+}
+
+.rainbow_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    /* filter: hue-rotate(0deg); */
+    animation: linear give_me_rainbow 15s infinite;
+}
+
+.change_color_keep {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+@keyframes give_me_rainbow {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(720deg);
+    }
+}
+
+.colorwell {
+    width: 100%;
+    position: relative;
+    float: left;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15000%;
+    height: 0;
+    top: -150vh;
+}
+
+.fuck {
+    background: rgba(255, 55, 0, 1);
+    animation: colorchange2 15s linear infinite;
+    width: 100%;
+    position: relative;
+    float: left;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15000%;
+    height: 0;
+    top: -150vh;
+}
+
+.rainbow_es {
+    width: 100%;
+    position: relative;
+    float: left;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15000%;
+    height: 0;
+    top: -150vh;
+}
+
+.shite {
+    animation: colorchange 4.2s linear infinite;
+}
+
+.shite1 {
+    animation: colorchange 2.2s linear infinite;
+}
+
+.shite2 {
+    animation: colorchange_flash 1s linear infinite;
+}
+
+.shite3 {
+    animation: colorchange_flash_dual 2s linear infinite;
+}
+
+.shite4 {
+    animation: colorchange2 4.2s linear infinite;
+}
+
+.tab_btn_title {
+    font-size: 20px;
+}
+
+.typewrite {
+    color: #ff6400;
+    font-size: 50px;
+    padding-left: 2%;
+}
+
+#output {
+    color: #ff6400;
+    font-size: 50px;
+    padding-left: 2%;
+}
+
+#output:empty:before {
+    content: '|';
+    color: #000;
+}
+
+#rainbow_es {
+    background-image: -webkit-linear-gradient(left, red, deeppink, mediumslateblue, deepskyblue, chartreuse, gold, orange, red);
+    background-image: -o-linear-gradient(left, red, deeppink, mediumslateblue, deepskyblue, chartreuse, gold, orange, red);
+    background-image: linear-gradient(to right, red, deeppink, mediumslateblue, deepskyblue, chartreuse, gold, orange, red);
+    -moz-animation: dayrainbow 6.5s forwards linear infinite;
+    -webkit-animation: dayrainbow 6.5s forwards linear infinite;
+    -o-animation: dayrainbow 6.5s forwards linear infinite;
+    -khtml-animation: dayrainbow 6.5s forwards linear infinite;
+    -ms-animation: dayrainbow 6.5s forwards linear infinite;
+    -lynx-animation: dayrainbow 6.5s forwards linear infinite;
+    animation: dayrainbow 6.5s forwards linear infinite;
+    background-size: 150% auto;
+}
+
+@-moz-keyframes dayrainbow {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+@-webkit-keyframes dayrainbow {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+@-o-keyframes dayrainbow {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+@-ms-keyframes dayrainbow {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+@-khtml-keyframes dayrainbow {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+@keyframes dayrainbow {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+#rainbow_es_2 {
+    background-image: -webkit-linear-gradient(left, red, deeppink, mediumslateblue, deepskyblue, chartreuse, gold, orange, red);
+    background-image: -o-linear-gradient(left, red, deeppink, mediumslateblue, deepskyblue, chartreuse, gold, orange, red);
+    background-image: linear-gradient(to right, red, deeppink, mediumslateblue, deepskyblue, chartreuse, gold, orange, red);
+    -moz-animation: dayrainbow_2 4.5s forwards linear infinite;
+    -webkit-animation: dayrainbow_2 4.5s forwards linear infinite;
+    -o-animation: dayrainbow_2 4.5s forwards linear infinite;
+    -khtml-animation: dayrainbow_2 4.5s forwards linear infinite;
+    -ms-animation: dayrainbow_2 4.5s forwards linear infinite;
+    -lynx-animation: dayrainbow_2 4.5s forwards linear infinite;
+    animation: dayrainbow_2 4.5s forwards linear infinite;
+    background-size: 150% auto;
+}
+
+@-moz-keyframes dayrainbow_2 {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+@-webkit-keyframes dayrainbow_2 {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+@-o-keyframes dayrainbow_2 {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+@-ms-keyframes dayrainbow_2 {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+@-khtml-keyframes dayrainbow_2 {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+@keyframes dayrainbow_2 {
+    from {
+        background-position: 300%;
+    }
+    to {
+        background-position: -300%;
+    }
+}
+
+@keyframes colorchange {
+    25% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    95% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes colorchange_flash {
+    0% {
+        opacity: 0.0;
+    }
+    18% {
+        opacity: 0.0;
+    }
+    20% {
+        opacity: 1.0;
+    }
+    32% {
+        opacity: 1.0;
+    }
+    80% {
+        opacity: 1.0;
+    }
+    82% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+
+@keyframes colorchange_flash_dual {
+    0% {
+        opacity: 0.0;
+    }
+    15% {
+        opacity: 0.0;
+    }
+    17% {
+        opacity: 1.0;
+    }
+    48% {
+        opacity: 1.0;
+    }
+    53% {
+        opacity: 0.0;
+    }
+    58% {
+        opacity: 1.0;
+    }
+    85% {
+        opacity: 1.0;
+    }
+    87% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+
+@keyframes colorchange2 {
+    0% {
+        background: rgba(255, 66, 0, 1);
+    }
+    7% {
+        opacity: 0.8;
+    }
+    14% {
+        background: rgba(255, 255, 0, 1);
+    }
+    21% {
+        opacity: 0.8;
+    }
+    28% {
+        background: rgba(0, 255, 0, 1);
+    }
+    35% {
+        opacity: 0.8;
+    }
+    42% {
+        background: rgba(0, 127, 255, 1);
+    }
+    49% {
+        opacity: 0.8;
+    }
+    56% {
+        background: rgba(0, 0, 255, 1);
+    }
+    63% {
+        opacity: 0.8;
+    }
+    70% {
+        background: rgba(139, 0, 255, 1);
+    }
+    77% {
+        opacity: 0.8;
+    }
+    85% {
+        background: rgba(255, 0, 0, 1);
+    }
+    92% {
+        opacity: 0.8;
+    }
+    100% {
+        background: rgba(255, 66, 0, 1);
+    }
+}
+
+
+/* aorus es 1/11 */
+
+.side_area div .btn_cooling_01 span {
+    font-family: "Aldrich", "微軟正黑體", Microsoft JhengHei, "微軟雅黑體", Microsoft YaHei, SimHei, "新細明體", Arial, Verdana, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    line-height: 15px;
+    color: #fff;
+    background: rgba(255, 100, 0, 1);
+    padding: 1% 1% 1% 2%;
+    cursor: pointer;
+}
+
+.side_area:hover div .btn_cooling_01 span {
+    font-family: "Aldrich", "微軟正黑體", Microsoft JhengHei, "微軟雅黑體", Microsoft YaHei, SimHei, "新細明體", Arial, Verdana, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    line-height: 15px;
+    color: #777;
+    font-weight: bold;
+    background: rgba(255, 180, 0, 1);
+    padding: 1% 1% 1% 2%;
+    cursor: pointer;
+}
+
+.cooling_font {
+    font-family: "Aldrich", "微軟正黑體", Microsoft JhengHei, "微軟雅黑體", Microsoft YaHei, SimHei, "新細明體", Arial, Verdana, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+
+.cooling_content_font {
+    font-family: 'Titillium Web', sans-serif, '微軟正黑體', Microsoft JhengHei;
+}
+
+.feature_button_eason {
+    width: 30px;
+    height: 30px;
+    background: #ff6400;
+    transform: translate(-50%, -50%) rotate(0deg);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.4s cubic-bezier(0.2, 0.6, 0.3, 1.1);
+}
+
+.feature_button_eason_01 {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+.feature_button_eason_02 {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+
+.feature_button_eason_03 {
+    position: absolute;
+    top: 80%;
+    left: 90%;
+}
+
+.feature_button_eason:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 2px;
+    width: 50%;
+    background: white;
+}
+
+.feature_button_eason:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 2px;
+    background: white;
+}
+
+.feature_button_eason.clicked {
+    transform: translate(-50%, -50%) rotate(360deg);
+    background: #ffbb00;
+}
+
+.feature_button_eason.clicked:before {
+    width: 0;
+}
+
+.color_style_hover {
+    cursor: pointer;
+}
+
+.color_style_hover {
+    border-bottom: none;
+}
+
+.color_style_hover:hover {
+    border-bottom: 2px;
+    border-color: #ff6400;
+    border-style: solid;
+}
+
+.btn-group {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .btm-group>div>div {
+        text-align: center;
+    }
+    .color_effect_content {
+        text-align: center
+    }
+    .color-picker-div {
+        text-align: center;
+    }
+    .color-speed {
+        text-align: center;
+    }
+}
