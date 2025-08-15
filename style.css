@@ -24,7 +24,7 @@ h1 {
 h2 {
   font-size: 46px;
   line-height: 54px;
-  color: #c32892;
+  color: #262c33;
 }
 
 h4 {
@@ -334,8 +334,12 @@ body {
   font-weight: 500;
   padding-bottom: 15px;
 }
-#sm-banner .banner-box:hover button {
+#sm-banner .banner-box button {
   background: white;
+  border: 1px solid white;
+}
+#sm-banner .banner-box:hover button {
+  background: rgb(132, 132, 132);
   border: 1px solid white;
 }
 #banner3 {
@@ -381,10 +385,11 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url("img/banner/b14.png");
+  background-image: url("img/banner/b14.jpg");
   background-repeat: no-repeat;
-  background-position: 20% 30%;
-  background-color: #041e42;
+  background-size: cover;
+  height: 40vh;
+  margin: 0;
 }
 #newsletter .form {
   display: flex;
@@ -403,13 +408,16 @@ body {
 #newsletter h4 {
   font-size: 22px;
   font-weight: 700;
-  color: #fff;
+  color: #f8ac08;
+}
+.newstext {
+  backdrop-filter: blur(2px);
 }
 
 #newsletter p {
   font-size: 14px;
   font-weight: 600;
-  color: #818ea0;
+  color: #f8ac08;
 }
 #newsletter input {
   height: 3.125rem;
@@ -481,9 +489,9 @@ footer .copyright {
 
 /* SHOP PAGE */
 #page-header {
-  background-image: url("img/banner/b1.jpg");
+  background-image: url("img/banner/b22.jpg");
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -554,7 +562,7 @@ footer .copyright {
 }
 #cart {
   overflow-x: auto;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 #cart table {
   width: 100%;
@@ -568,7 +576,7 @@ footer .copyright {
 }
 .fa-times-circle:before {
   content: "\f057";
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #cart table td:nth-child(1) {
@@ -578,7 +586,7 @@ footer .copyright {
 #cart table td:nth-child(1) {
   width: 100px;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #cart table td:nth-child(2) {
@@ -599,7 +607,7 @@ footer .copyright {
 #cart table td:nth-child(5) input {
   width: 70px;
   background-color: #2f2e2e;
-  color: white;
+  color: rgb(0, 0, 0);
   border: 1px solid white;
   padding: 10px 5px 10px 15px;
 }
@@ -624,13 +632,13 @@ footer .copyright {
   font-size: 13px;
 }
 #cart-add {
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 #coupon h3 {
-  color: #1dbce4;
+  color: #262c33;
   padding-bottom: 15px;
 }
 
@@ -648,7 +656,7 @@ footer .copyright {
   padding: 12px 20px;
 }
 #subtotal h3 {
-  color: #1dbce4;
+  color: #262c33;
 }
 #subtotal {
   width: 50%;
