@@ -29,7 +29,7 @@ h2 {
 
 h4 {
   font-size: 20px;
-  color: #1dbce4;
+  color: #262c33;
 }
 
 h6 {
@@ -512,10 +512,16 @@ footer .copyright {
 }
 #prodetails {
   display: flex;
-  background-color: #3a3a3a;
-  color: white;
+  background-color: #a9a9a9;
+  color: rgb(0, 0, 0);
+}
+#MainImg {
+  border: 3px solid rgb(0, 0, 0);
 }
 #prodetails .single-pro-image {
+  background-color: #bfbdbd;
+  /* padding: 10px; */
+  border-radius: 0px;
   width: 40%;
   margin-right: 50px;
 }
@@ -526,12 +532,20 @@ footer .copyright {
 }
 
 .small-img-col {
+  border-bottom: 3px solid rgb(0, 0, 0);
+  border-radius: 2px;
   flex-basis: 24%;
   cursor: pointer;
+}
+.small-img-col:hover {
+  border-bottom: 3px solid orange;
 }
 #prodetails .single-pro-details {
   width: 50%;
   padding-top: 30px;
+}
+#prodetails h6 {
+  color: #000;
 }
 
 #prodetails .single-pro-details h4 {
@@ -558,7 +572,9 @@ footer .copyright {
 #prodetails .single-pro-details button {
   background: white;
   color: #000000;
-  padding: 10px 20px;
+  padding: 14px 13px;
+  border-radius: 2px;
+  border: 1px solid black;
 }
 #cart {
   overflow-x: auto;
