@@ -904,6 +904,5 @@ footer .copyright {
   #cart {
     display: block;
     position: -webkit-sticky;
-    top: 30vh;
   }
 }
