@@ -14,7 +14,9 @@ html {
 }
 
 /* Global Styles */
-
+a {
+  text-decoration: none;
+}
 h1 {
   font-size: 50px;
   line-height: 64px;
@@ -34,7 +36,7 @@ h4 {
 
 h6 {
   font-weight: 700;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 12px;
 }
 
@@ -78,7 +80,7 @@ button.white {
 
 body {
   width: 100%;
-  background-color: #a9a9a9;
+  background: linear-gradient(180deg, #faf0e6 0%, #faf0e6 100%);
 }
 #header {
   display: flex;
@@ -176,7 +178,7 @@ body {
   text-align: center;
   padding: 25px 15px;
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-  border: 1px solid #cce7d0;
+  border: 1px solid #929292;
   border-radius: 4px;
   margin: 15px 0;
 }
@@ -203,17 +205,16 @@ body {
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
-  background-color: #3d3c3c;
   border: 2px solid gray;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
   margin: 15px 0;
-  transition: o.2s ease;
+  transition: all 0.2s ease;
   position: relative;
 }
 #product1 .pro:hover {
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
 }
 #product1 .pro img {
   width: 100%;
@@ -226,13 +227,13 @@ body {
 }
 
 #product1 .pro .des span {
-  color: yellow;
+  color: rgb(86, 86, 86);
   font-size: 12px;
 }
 
 #product1 .pro .des h5 {
   padding-top: 7px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 14px;
 }
 #product1 .pro .des i {
@@ -244,7 +245,7 @@ body {
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
-  color: white;
+  color: rgb(14, 14, 14);
 }
 
 #product1 .pro .cart {
@@ -512,16 +513,17 @@ footer .copyright {
 }
 #prodetails {
   display: flex;
-  background-color: #a9a9a9;
+  background: linear-gradient(180deg, #faf0e6 0%, #faf0e6 100%);
   color: rgb(0, 0, 0);
 }
 #MainImg {
-  border: 3px solid rgb(0, 0, 0);
+  border-bottom: 2px solid #000;
 }
 #prodetails .single-pro-image {
-  background-color: #bfbdbd;
+  border: 2px solid #000;
   /* padding: 10px; */
-  border-radius: 0px;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
   width: 40%;
   margin-right: 50px;
 }
@@ -532,13 +534,16 @@ footer .copyright {
 }
 
 .small-img-col {
-  border-bottom: 3px solid rgb(0, 0, 0);
   border-radius: 2px;
+  padding-right: 20px;
+  padding-left: 10px;
+  margin: 0;
   flex-basis: 24%;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 .small-img-col:hover {
-  border-bottom: 3px solid orange;
+  transform: translateY(-8px);
 }
 #prodetails .single-pro-details {
   width: 50%;
@@ -622,14 +627,14 @@ footer .copyright {
 }
 #cart table td:nth-child(5) input {
   width: 70px;
-  background-color: #2f2e2e;
+  background-color: #c5bcbc;
   color: rgb(0, 0, 0);
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
   padding: 10px 5px 10px 15px;
 }
 
 #cart table thead {
-  border: 1px solid #e2e9e1;
+  border: 1px solid #000000;
   border-left: none;
   border-right: none;
 }
@@ -663,7 +668,7 @@ footer .copyright {
   outline: none;
   width: 60%;
   margin-right: 10px;
-  border: 1px solid #e2e9e1;
+  border: 1px solid #070707;
 }
 #subtotal button,
 #coupon button {
@@ -672,12 +677,12 @@ footer .copyright {
   padding: 12px 20px;
 }
 #subtotal h3 {
-  color: #262c33;
+  color: #000000;
 }
 #subtotal {
   width: 50%;
   margin-bottom: 30px;
-  border: 1px solid #e2e9e1;
+  border: 1px solid #080808;
   padding: 30px;
 }
 #subtotal table {
@@ -687,7 +692,7 @@ footer .copyright {
 }
 #subtotal table td {
   width: 50%;
-  border: 1px solid #e2e9e1;
+  border: 1px solid #000000;
   padding: 10px;
   font-size: 13px;
 }
@@ -775,7 +780,6 @@ footer .copyright {
   }
   #feature {
     padding: 10px;
-    background-color: #222;
     z-index: 99;
     padding-top: 70px;
   }
@@ -791,12 +795,8 @@ footer .copyright {
   #product1 .pro {
     min-width: 80vw;
     padding: 10px 12px;
-    border: 1px solid #cce7d0;
     border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
     margin: 15px 0;
-    transition: o.2s ease;
     position: relative;
   }
   #product1 .pro img {
@@ -867,7 +867,7 @@ footer .copyright {
   #subtotal {
     width: 100%;
     margin-bottom: 30px;
-    border: 1px solid #e2e9e1;
+    border: 1px solid #000000;
     padding: 15px;
   }
   #cart-add {
@@ -880,5 +880,8 @@ footer .copyright {
 
   .section-p1 {
     padding: 40px;
+  }
+  #page-header {
+    background-position: center;
   }
 }
