@@ -704,78 +704,6 @@ footer .copyright {
 #imgg {
   width: 150px;
 }
-/* Prevent horizontal overflow and ensure full height */
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-x: hidden;
-}
-
-/* Make body a flex container */
-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background: linear-gradient(180deg, #faf0e6 0%, #faf0e6 100%);
-}
-
-/* Push footer to bottom */
-footer {
-  margin-top: auto;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Remove extra margins in footer */
-footer .col {
-  margin-bottom: 0;
-}
-
-/* Reduce footer padding */
-footer.section-p1 {
-  padding: 40px 80px 20px;
-}
-
-/* Constrain cart table */
-#cart table {
-  max-width: 100%;
-  box-sizing: border-box;
-  white-space: normal;
-}
-
-/* Constrain cart table images */
-#cart table img {
-  width: 70px;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Constrain cart-add and its children */
-#cart-add {
-  max-width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 0;
-}
-
-#coupon,
-#subtotal {
-  max-width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 0;
-}
-
-#subtotal table {
-  margin-bottom: 0;
-}
-
-#coupon input {
-  width: 60%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
 
 @media (max-width: 799px) {
   #header {
@@ -955,5 +883,27 @@ footer.section-p1 {
   }
   #page-header {
     background-position: center;
+  }
+  html,
+  body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  /* Make body a flex container */
+  body {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(180deg, #faf0e6 0%, #faf0e6 100%);
+  }
+  #cart.section-p1 {
+    height: 30vh;
+  }
+  #cart {
+    display: block;
+    position: -webkit-sticky;
+    top: 30vh;
   }
 }
